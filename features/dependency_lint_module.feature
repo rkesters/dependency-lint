@@ -6,9 +6,9 @@ Feature: Self-reporting
 
 
   Scenario: devDependency
-    Given I have "dependency-lint" installed
-    And I have "dependency-lint" listed as a devDependency
+    Given I have "@rkesters/dependency-lint" installed
+    And I have "@rkesters/dependency-lint" listed as a devDependency
     When I run it
     Then it reports the "devDependencies":
-      | NAME            | ERROR  |
-      | dependency-lint | <none> |
+      | NAME                      | ERROR  |
+      | @rkesters/dependency-lint | <none> |

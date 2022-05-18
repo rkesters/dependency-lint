@@ -7,7 +7,7 @@ Feature: Coffeescript compilation error
     Given I have configured "requiredModules.files.root" to be "**/*.coffee"
     And I have configured "requiredModules.transpilers" to contain
       | EXTENSION | MODULE        |
-      | .coffee   | coffee-script |
+      | .coffee   | coffeescript |
 
 
   Scenario: coffeescript compilation error

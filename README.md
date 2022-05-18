@@ -1,7 +1,7 @@
 # dependency-lint
-[![Build Status](https://img.shields.io/circleci/project/charlierudolph/dependency-lint/master.svg)](https://circleci.com/gh/charlierudolph/dependency-lint?)
-[![Dependency Status](https://img.shields.io/david/charlierudolph/dependency-lint.svg)](https://david-dm.org/charlierudolph/dependency-lint)
-[![NPM Version](https://img.shields.io/npm/v/dependency-lint.svg)](https://www.npmjs.com/package/dependency-lint)
+![CircleCI](https://img.shields.io/circleci/build/github/rkesters/dependency-lint)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@rkesters/dependency-lint)
+![npm (scoped)](https://img.shields.io/npm/v/@rkesters/dependency-lint)
 
 Lints your NPM `dependencies` and `devDependencies` reporting which node modules are
 * **missing** and should be added to your `dependencies` or `devDependencies`
@@ -37,7 +37,7 @@ the node modules it determines are used. A node module is used if:
 Since this does not cover all the possible ways that a node module can be used,
 `dependency-lint` can be [configured](docs/configuration.md#ignoreerrors)
 to ignore specific errors. Please create an
-[issue](https://github.com/charlierudolph/dependency-lint/issues)
+[issue](https://github.com/rkesters/dependency-lint/issues)
 anytime you need to use this, so we can discuss new ways to determine if and
 how a node module is used.
 

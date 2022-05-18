@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"importHelpers": false,
+		"outDir": "dist",
+		"strict": true,
+		"module": "commonjs",
+		"target": "es2017",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Node",
+		"noErrorTruncation": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationMap": true,
+		"rootDir": "./src"
+	},
+	"include": [
+		"./src/**/*.*",
+	],
+	"exclude": ["node_modules"],
+	"ts-node": {
+		"files": true
+	  }
+}

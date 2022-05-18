@@ -61,7 +61,7 @@ executedModules:
 Mapping from error to a list of modules that will be ignored.
 Passed to `string.match`
 
-Please create an [issue](https://github.com/charlierudolph/dependency-lint/issues)
+Please create an [issue](https://github.com/rkesters/dependency-lint/issues)
 anytime you need to use this
 
 Example:
@@ -152,7 +152,7 @@ if (resultKey) {
 }
 ```
 
-If the transpiler you're using doesn't fit into this pattern, please open an [issue](https://github.com/charlierudolph/dependency-lint/issues)
+If the transpiler you're using doesn't fit into this pattern, please open an [issue](https://github.com/rkesters/dependency-lint/issues)
 
 Example:
 ```yml
@@ -168,4 +168,8 @@ requiredModules:
 
     - extension: .ls
       module: livescript # 1.5.0
+
+	- extension: .ts
+	  builtin: ts
+	  configFile: ./tsconfig.depLint.json
 ```
