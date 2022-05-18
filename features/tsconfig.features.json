@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"importHelpers": false,
+		"outDir": "../.features",
+		"rootDir": "../",
+		"rootDirs": ["./features"],
+		"strict": true,
+		"module": "commonjs",
+		"target": "es2015",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Node",
+		"noErrorTruncation": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationMap": true
+	},
+	"include": ["./**/*.ts"],
+	"exclude": ["package.json", "../package.json"]
+}

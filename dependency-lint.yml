@@ -5,6 +5,7 @@ executedModules:
       - lint
       - publish
       - test
+      - clean
 
 ignoreErrors:
   missing: []
@@ -27,18 +28,43 @@ ignoreErrors:
     - eslint-plugin-promise # peer dependency of eslint-config-standard
     - eslint-plugin-standard # peer dependency of eslint-config-standard
     - prettier # peer dependency of eslint-plugin-prettier
+    - '@babel/plugin-transform-shorthand-properties'
+    - 'ts-node'
+    - 'xo'
+    - '@types/acorn'
+    - '@types/bluebird'
+    - '@types/chai'
+    - '@types/detective'
+    - '@types/dirty-chai'
+    - '@types/docopt'
+    - '@types/fs-extra'
+    - '@types/glob'
+    - '@types/js-yaml'
+    - '@types/lodash'
+    - '@types/minimatch'
+    - '@types/mocha'
+    - '@types/node'
+    - '@types/semver'
+    - '@types/sorted-object'
+    - '@types/tmp'
+    - 'copyfiles'
+    - 'tslib'
+    - 'type-fest'
 
 requiredModules:
   files:
     dev:
-      - '{features,test}/**/*'
-      - '**/*_spec.js'
+      - '{features,test,__test__}/**/*'
     ignore:
       - 'node_modules/**/*'
-    root: '**/*.js'
+      - 'dist/**/*'
+    root: '**/*.ts'
   stripLoaders: false
   transpilers:
     - extension: .js
       fnName: transform
       module: '@babel/core' # 7.2.3
       resultKey: code
+    - extension: .ts
+      builtin: ts
+      configFile: ./tsconfig.depLint.json
