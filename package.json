@@ -1,6 +1,6 @@
 {
 	"name": "@rkesters/dependency-lint",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "Lints package.json dependencies and devDependencies",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
