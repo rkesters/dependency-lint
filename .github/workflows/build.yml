@@ -11,8 +11,8 @@ jobs:
   cache-and-install:
     strategy:
       matrix:
-        version: [16.13.1]
-        os: [ubuntu-latest, windows-latest]
+        version: [14, 16, 18]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
