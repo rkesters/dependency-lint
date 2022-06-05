@@ -7,7 +7,7 @@ Lints your NPM `dependencies` and `devDependencies` reporting which node modules
 * **missing** and should be added to your `dependencies` or `devDependencies`
 * **unused** and should be removed from your `dependencies` or `devDependencies`
 * **mislabeled** and should be moved from `dependencies` to `devDependencies` or vice versa
-
+   
 ## Installation
 
 Supported on [Node.js](https://nodejs.org/en) versions 12, 14, 16
