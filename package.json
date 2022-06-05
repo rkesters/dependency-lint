@@ -12,6 +12,12 @@
 		"config",
 		"dist"
 	],
+	"packageManager": "pnpm@7.1.7",
+	"engineStrict": true,
+	"engines": {
+		"npm": "don't use npm, use pnpm",
+		"pnpm": ">=7.1.7"
+	},
 	"scripts": {
 		"clean": "pnpm exec shx rm -Rf dist && pnpm exec tsc --build --clean",
 		"prebuild": "pnpm clean",
