@@ -41,6 +41,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run Test
-        run: pnpm ci:test
+        run: pnpm test
       - name: Build
         run: pnpm exec tsc
